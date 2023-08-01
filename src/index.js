@@ -1,10 +1,10 @@
 import './style.css';
-import Leaderboard from './scores';
+import { Leaderboard } from './scores.js';
 
-let leaderboard = new Leaderboard()
+const leaderboard = new Leaderboard();
 
-leaderboard.addScore()
+leaderboard.addScore();
 
 window.onload = () => {
-    leaderboard.loadData();
-}
+  leaderboard.loadData();
+};
