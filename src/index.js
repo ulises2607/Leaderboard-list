@@ -6,5 +6,5 @@ const leaderboard = new Leaderboard();
 leaderboard.addScore();
 
 window.onload = () => {
-  leaderboard.loadData();
+  leaderboard.displayData();
 };

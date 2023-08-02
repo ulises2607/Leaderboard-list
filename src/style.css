@@ -39,7 +39,10 @@ h1 {
 .scores {
   margin-top: 1.4rem;
   padding: 5px;
-  border: 3px black solid;
+}
+
+.score-list {
+    border: 3px black solid;
 }
 
 .item {

@@ -94,7 +94,7 @@ Use at the end '--fix' to help you out with any error.
 👤 **Rysth**
 
 - GitHub: [@ulises2607](https://github.com/ulises2607)
-- LinkedIn: [Cesar Ulises Cappa Subelza](https://www.linkedin.com/in/cesar-ulises-cappa-subelza/)
+- LinkedIn: [Cesar Ulises Cappa Subelza](https://www.linkedin.com/in/ulises-cappa-subelza/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
