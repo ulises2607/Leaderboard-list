@@ -4,13 +4,14 @@ const scoreList = document.querySelector('.score-list');
 const scoreForm = document.querySelector('.score-form');
 
 export class Leaderboard {
-  /* eslint-disable class-methods-use-this */
+  scoreObj = {}
+
   createScore(nameParam, scoreParam) {
-    const scoreObj = {
+    this.scoreObj = {
       user: nameParam,
       score: scoreParam,
     };
-    postScore(scoreObj);
+    postScore(this.scoreObj);
   }
 
   displayData = async () => {
@@ -19,7 +20,7 @@ export class Leaderboard {
       const data = await getData();
       data.forEach((elem) => {
         scoreList.innerHTML += `
-              <li class="item">${elem.user}: - ${elem.score}</li>
+              <li class="item">${elem.user}: ${elem.score}</li>
           `;
       });
     } catch (error) {
@@ -42,7 +43,6 @@ export class Leaderboard {
       const name = document.querySelector('#input-name');
       const score = document.querySelector('#input-score');
       this.createScore(name.value, score.value);
-      this.displayData();
     });
   }
 }
